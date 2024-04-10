@@ -1,0 +1,131 @@
+.urunler .urun-item {
+  text-align: center;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+}
+
+.urunler .urun-item .urun-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.urunler .urun-item img {
+  width: 100%;
+  transition: 0.3s ease-in-out all;
+}
+
+.urunler .urun-item .img1:hover {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.urunler .urun-item .urun-image:hover .img2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.urunler .urun-item .img2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.urunler .urun-item .urun-basligi {
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.urunler .urun-item .urun-yildiz {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+  column-gap: 2px;
+}
+
+.urunler .urun-item .urun-yildiz i {
+  font-size: 12px;
+  color: gold;
+}
+
+.urun-item .urun-fiyat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  padding-bottom: 15px;
+}
+
+.urun-item .urun-fiyat strong {
+  color: #ff3c20;
+  font-weight: 500;
+}
+
+.urun-item .urun-fiyat span {
+  color: #7d7d7d;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.urun-item .urun-indirim {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3c20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 100%;
+  font-weight: 500;
+}
+
+.urun-item .urun-linki {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 8px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-out all;
+  overflow: hidden;
+}
+
+.urunler .urun-item:hover .urun-linki {
+  transform: translate(15px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.urun-item .urun-linki button,
+.urun-item .urun-linki a {
+  background-color: #000;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all ease 0.3s;
+}
+
+.urun-item .urun-linki button:hover,
+.urun-item .urun-linki a:hover {
+  opacity: 0.7;
+}
+
+.urun-item .urun-linki i {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+}

@@ -1,0 +1,26 @@
+.katagoriler .katagori-item {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.katagoriler .katagori-item a {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.katagoriler .katagori-item .katagori-image {
+  width: 100%;
+  transition: transform ease 0.2s;
+}
+
+.katagoriler .katagori-item .katagori-image:hover {
+  transform: scale(1.1);
+}

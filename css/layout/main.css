@@ -1,0 +1,17 @@
+/*! genel css */
+@import url(base.css);
+
+/*! layout */
+@import url(header.css);
+@import url(altbilgi.css);
+
+/*! components */
+@import url(components/model-arama.css);
+@import url(components/kaydirici.css);
+@import url(components/katagori-item.css);
+@import url(components/urun-item.css);
+@import url(components/kampanta-item.css);
+@import url(components/tekli-kampanya.css);
+
+/*! pages */
+@import url(pages/ev.css);

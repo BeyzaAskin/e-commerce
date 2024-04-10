@@ -1,0 +1,259 @@
+/*! başlık başlangıcı */
+header {
+  border-bottom: 1px solid #dee0ea;
+  position: relative;
+}
+
+.genel-bildiri {
+  background-color: #1367ef;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+.genel-bildiri a {
+  color: white;
+  font-weight: 600;
+}
+
+.ust-bilgi-satiri {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.baslik-mobil {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.baslik-merkezi .bi-x-circle {
+  display: none;
+}
+
+.baslik-merkezi .navigation .menu-listesi {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.baslik-merkezi .menu-listesi .menu-listesi-ogesi {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 90px;
+}
+
+.baslik-merkezi .menu-listesi .menu-link {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.baslik-merkezi .menu-listesi .menu-link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #1367ef;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.2s ease width;
+}
+
+.baslik-merkezi .menu-listesi .menu-listesi-ogesi:hover .menu-link::after {
+  width: 100%;
+}
+
+.baslik-merkezi .menu-listesi .menu-link.active::after {
+  width: 100%;
+}
+
+.baslik-merkezi .menu-listesi i {
+  font-size: 12px;
+}
+
+.baslik-sag .baslik-sag-links {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.baslik-sag .bi-person {
+  font-size: 23px;
+}
+
+.baslik-sag .toggle-button {
+  border: none;
+  background-color: transparent;
+}
+
+.baslik-sag i {
+  font-size: 18px;
+  display: flex;
+}
+
+.baslik-sag .header-cart {
+  position: relative;
+}
+
+.baslik-sag .header-cart-link .header-cart-count {
+  width: 16px;
+  height: 16px;
+  background-color: #1367ef;
+  color: white;
+  font-size: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+/*? menü açılış başlangıcı */
+
+header .menu-acilir-wrapper {
+  position: absolute;
+  top: 100%;
+  left: -30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+header .menu-acilir-icerigi {
+  width: 220px;
+  background-color: #fff;
+  border: 1px solid #dee0ea;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0;
+}
+
+header .menu-acilir-icergi a {
+  display: flex;
+  padding: 4px 30px;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+header .menu-acilir-icerigi a:hover {
+  color: #1367ef;
+}
+
+.baslik-merkezi .menu-listesi .menu-listesi-ogesi:hover .menu-acilir-wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-acilir-buyukmenu {
+  background-color: white;
+  border: 1px solid #dee0ea;
+  padding: 22px;
+  display: flex;
+  column-gap: 50px;
+}
+
+.buyukmenu-wrapper .menu-acilir-wrapper {
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buyukmenu-wrapper {
+  position: static !important;
+}
+
+.buyukmenu-wrapper .buyukmenu-links {
+  display: flex;
+  column-gap: 50px;
+}
+
+.buyukmenu-wrapper .buyukmenu-urun-basligi {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.buyukmenu-wrapper .buyukmenu-menu-listesi {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.buyukmenu-wrapper .buyukmenu-menu-listesi a {
+  font-size: 14px;
+}
+
+.buyukmenu-wrapper .buyukmenu-tek-baslik {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.buyukmenu-wrapper .buyukmenu-tek-altyazi {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.buyukmenu-wrapper .buyukmenu-tek-button {
+  margin-top: 5px;
+}
+/*? menü açılış sonu*/
+
+/*! başlık sonu */
+
+/*  Başlık Duyarlı Tasarım*/
+
+@media (max-width: 650px) {
+  .baslik-merkezi {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    background-color: #fff;
+    border-right: 1px solid #dee0ea;
+  }
+
+  .baslik-merkezi .bi-x-circle {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .baslik-merkezi .menu-listesi {
+    flex-direction: column;
+    padding: 50px 75px;
+  }
+
+  .baslik-mobil {
+    display: inline-block;
+  }
+
+  header .menu-acilir-wrapper {
+    display: none !important;
+  }
+
+  header .menu-listesi i {
+    display: none;
+  }
+  header .menu-listesi-ogesi a {
+    font-size: 16px !important;
+  }
+}

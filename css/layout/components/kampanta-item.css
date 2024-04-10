@@ -1,0 +1,43 @@
+.kampanyalar .kampanya-item {
+  padding: 70px 35px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  color: white;
+}
+
+.kampanyalar .kampanya-item .kampanya-baslik {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.kampanyalar .kampanya-item .kampanya-tanim {
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+.kampanyalar-wrapper:nth-child(1) .kampanya-item:nth-child(1) {
+  background-image: url(../../../img/kampanyalar/banner1.png);
+}
+
+.kampanyalar-wrapper:nth-child(1) .kampanya-item:nth-child(2) {
+  background-image: url(../../../img/kampanyalar/banner2.png);
+}
+
+.kampanyalar-wrapper:nth-child(2) .kampanya-item:nth-child(1) {
+  background-image: url(../../../img/kampanyalar/banner3.png);
+  flex: 5;
+}
+
+.kampanyalar-wrapper:nth-child(2) .kampanya-item:nth-child(2) {
+  background-image: url(../../../img/kampanyalar/banner4.png);
+  flex: 3;
+}
+
+@media (max-width: 768px) {
+  .kampanyalar .kampanya-item {
+    width: 100%;
+    flex: unset !important;
+  }
+}

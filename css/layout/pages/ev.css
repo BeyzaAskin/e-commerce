@@ -1,0 +1,112 @@
+.bolum-basligi {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.bolum-basligi {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/*! katagoriler başlangıcı */
+.katagoriler {
+  margin: 40px 0;
+}
+
+.katagoriler .katagori-listesi {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+/*! katagoriler sonu */
+
+/*! ürün başlangıcı */
+
+.urunler {
+  margin-bottom: 40px;
+}
+
+.urunler .urun-listesi {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+/*! ürün sonu */
+
+/*! kampanya başlangıcı */
+.kampanyalar .kampanyalar-wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+/*! kampanya sonu */
+
+/*! marka başlangıcı */
+.markalar {
+  margin: 40px 0;
+}
+
+.marka-listesi {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #dee0ea;
+  padding: 30px 5px;
+}
+
+.marka-listesi .marka-item {
+  opacity: 0.4;
+  transition: 0.2s ease all opacity;
+}
+
+.marka-listesi .marka-item:hover {
+  opacity: 1;
+}
+/*! marka sonu*/
+
+/*! politika bailangıcı */
+
+.politika {
+  border: 1px solid #dee0ea;
+  margin-top: 40px;
+}
+
+.politika .politika-listesi {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px 0;
+}
+
+.politika .politika-listesi .politika-item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.politika .politika-item i {
+  font-size: 50px;
+  display: flex;
+}
+
+.politika .politika-item .politika-metinleri {
+  display: flex;
+  flex-direction: column;
+}
+
+.politika .politika-item .politika-metinleri strong {
+  font-weight: 600;
+}
+
+.politika .politika-item .politika-metinleri span {
+  font-size: 12px;
+}
+/*! politika sonu */
+
+@media (max-width: 768px) {
+  .politika .politika-listesi {
+    flex-direction: column;
+  }
+}
